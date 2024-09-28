@@ -2,20 +2,19 @@
 body{
     font-family: 'Caveat', 'Dancing+Script', cursive;
     padding-top: 56px;
+    transition: background 0.5s ease;
 }
 
 body.light {
-    background-color: #ffffff; /* Цвет фона для светлой темы */
-    color: #000000; /* Цвет текста для светлой темы */
-    transition: background-color 0.8s ease;
+    background: linear-gradient(135deg, rgba(255, 233, 233, 0.7), rgba(245, 245, 220, 0.7), rgba(200, 230, 255, 0.7));
+    background-size: 400% 400%;
 }
 
 body.dark {
-    background-color: #121212; /* Цвет фона для темной темы */
-    color: #ffffff; /* Цвет текста для темной темы */
-    transition: background-color 0.8s ease; /* Плавный переход для навигационной панели */
-
+    background: linear-gradient(135deg, rgba(40, 44, 52, 0.8), rgba(58, 68, 102, 0.8), rgba(60, 76, 96, 0.8));
+    background-size: 400% 400%;
 }
+
 
 .navbar-light {
     background-color: #f8f9fa; /* Цвет фона навигационной панели для светлой темы */
@@ -28,13 +27,9 @@ body.dark {
 
 }
 
-
 .navbar-nav {
     border-radius: 20px; /* Устанавливаем радиус закругления */
     transition: background-color 0.3s, color 0.3s; /* Добавляем плавный переход */
-}
-
-.navbar-nav {
     background-color: rgba(0, 123, 255, 0.1); /* Цвет фона при наведении */
     color: #007bff; /* Цвет текста при наведении */
 }
@@ -93,5 +88,9 @@ body.dark {
         transform: translateY(0);
     }
 }
+
+
+
+
 
 

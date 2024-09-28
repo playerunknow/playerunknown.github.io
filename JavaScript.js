@@ -23,7 +23,6 @@ fadeElements.forEach(element => {
 
 
 
-
 const themeToggle = document.getElementById('themeToggle');
 const body = document.body;
 

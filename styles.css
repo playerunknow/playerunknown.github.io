@@ -1,15 +1,97 @@
 
 body{
-    font-family: 'Caveat', cursive;
+    font-family: 'Caveat', 'Dancing+Script', cursive;
     padding-top: 56px;
+}
+
+body.light {
+    background-color: #ffffff; /* Цвет фона для светлой темы */
+    color: #000000; /* Цвет текста для светлой темы */
+    transition: background-color 0.8s ease;
+}
+
+body.dark {
+    background-color: #121212; /* Цвет фона для темной темы */
+    color: #ffffff; /* Цвет текста для темной темы */
+    transition: background-color 0.8s ease; /* Плавный переход для навигационной панели */
 
 }
 
+.navbar-light {
+    background-color: #f8f9fa; /* Цвет фона навигационной панели для светлой темы */
+    transition: background-color 0.8s ease; /* Плавный переход для навигационной панели */
+}
+
+.navbar-dark {
+    background-color: #343a40; /* Цвет фона навигационной панели для темной темы */
+    transition: background-color 0.8s ease; /* Плавный переход для навигационной панели */
+
+}
+
+
+.navbar-nav {
+    border-radius: 20px; /* Устанавливаем радиус закругления */
+    transition: background-color 0.3s, color 0.3s; /* Добавляем плавный переход */
+}
+
+.navbar-nav {
+    background-color: rgba(0, 123, 255, 0.1); /* Цвет фона при наведении */
+    color: #007bff; /* Цвет текста при наведении */
+}
+
+
 .nav-link {
-    transition: all 0.3s ease;
+    border-radius: 20px; /* Устанавливаем радиус закругления */
+    transition: background-color 0.3s, color 0.3s; /* Добавляем плавный переход */
 }
 
 .nav-link:hover {
     color: #007bff; /* Change to your desired hover color */
-    transform: scale(1.2); /* Slightly scale up the text */
+    transform: scale(1.1); /* Slightly scale up the text */
+    box-shadow: 0 4px 20px rgba(0, 123, 255, 0.5)
 }
+
+.square {
+    width: 200px;  /* Ширина квадрата */
+    height: 200px; /* Высота квадрата */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: 2px solid #007bff; /* Цвет границы */
+    background-color: #f8f9fa; /* Цвет фона */
+    margin: 2px; /* Отступ между квадратами */
+    transition: transform 0.3s, box-shadow 0.3s; /* Переход для эффектов */
+
+}
+
+.square:hover {
+    transform: scale(1.1); /* Увеличение при наведении */
+    box-shadow: 0 4px 20px rgba(0, 123, 255, 0.5); /* Тень при наведении */
+}
+
+.centered {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 30vh; /* Высота 100% от высоты экрана */
+}
+
+.fade-in {
+    opacity: 0;
+    transform: translateY(30px);
+    transition: opacity 2.5s ease-out, transform 2.5s ease-out;
+}
+
+.fade-in.visible {
+    opacity: 1;
+    transform: translateY(0);
+}
+
+@keyframes fadeIn {
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+

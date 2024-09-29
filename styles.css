@@ -5,6 +5,12 @@ body{
     /*transition: background 0.5s ease;*/
 }
 
+.container{
+    max-width: 1200px;
+    margin: 0px auto;
+    padding: 0px 15px;
+}
+
 body.light {
     background: linear-gradient(135deg, #f0f4c3, #e0f7fa);
     background-size: 400% 400%;
@@ -30,8 +36,6 @@ body.dark {
         background-position: 50%;
     }
 }
-
-
 
 
 /* Светлая тема для квадратов */

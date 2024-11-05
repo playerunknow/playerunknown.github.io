@@ -41,9 +41,13 @@ body.light .nav-link{
 }
 
 body.light .nav-link:hover {
-    color: #a184e1;
+    color: #92b0d2;
     transform: scale(1.1);
-    box-shadow: 0 4px 30px #a184e1
+    box-shadow: 0 4px 30px #92b0d2
+}
+
+body.light .bottom {
+    background-color: #92b0d2;
 }
 
 
@@ -80,37 +84,12 @@ body.dark .nav-link{
 
 }
 
-
-
-
-
-.custom-soft-skill {
-    background-color: #28a745; /* Зеленый */
+body.dark .bottom {
+    background-color: #737d86;
 }
 
-.custom-teamwork {
-    background-color: #17a2b8; /* Голубой */
-}
 
-.custom-problem-solving {
-    background-color: #ffc107; /* Желтый */
-}
 
-.custom-english {
-    background-color: #6c757d; /* Серый */
-}
-
-.custom-python {
-    background-color: #007bff; /* Синий */
-}
-
-.custom-django {
-    background-color: #dc3545; /* Красный */
-}
-
-.custom-postgresql {
-    background-color: #343a40; /* Темный */
-}
 
 
 /*.progress-bar {*/

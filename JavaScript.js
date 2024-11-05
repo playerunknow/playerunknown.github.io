@@ -5,21 +5,21 @@ const fadeElements = document.querySelectorAll('.fade-in');
 const options = {
     root: null,
     rootMargin: '0px',
-    threshold: 0.1 // Срабатывает, когда 10% элемента в зоне видимости
+    threshold: 0.1
 };
 
 const observer = new IntersectionObserver((entries) => {
     entries.forEach(entry => {
         if (entry.isIntersecting) {
-            entry.target.classList.add('visible'); // Элемент появился
+            entry.target.classList.add('visible');
         } else {
-            entry.target.classList.remove('visible'); // Элемент исчез
+            entry.target.classList.remove('visible');
         }
     });
 }, options);
 
 fadeElements.forEach(element => {
-    observer.observe(element); // Наблюдаем за каждым элементом
+    observer.observe(element);
 });
 
 
@@ -31,15 +31,15 @@ themeToggle.addEventListener('click', () => {
     if (body.classList.contains('light')) {
         body.classList.remove('light');
         body.classList.add('dark');
-        themeToggle.textContent = 'Light Theme'; // Меняем текст кнопки
+        themeToggle.textContent = 'Light Theme';
     } else {
         body.classList.remove('dark');
         body.classList.add('light');
-        themeToggle.textContent = 'Dark Theme'; // Меняем текст кнопки
+        themeToggle.textContent = 'Dark Theme';
     }
 });
 
-// Установить начальную тему
+
 if (!body.classList.contains('dark')) {
-    body.classList.add('light'); // Устанавливаем светлую тему по умолчанию
+    body.classList.add('light');
 }

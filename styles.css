@@ -1,8 +1,9 @@
 
 body{
-    font-family: 'Caveat', 'Dancing+Script', cursive;
     padding-top: 56px;
     /*transition: background 0.5s ease;*/
+    font-family: 'Caveat', 'Dancing+Script', cursive !important;
+    font-size: 26px !important;
 }
 
 .container{
@@ -12,99 +13,199 @@ body{
 }
 
 body.light {
-    background: linear-gradient(135deg, #f0f4c3, #e0f7fa);
-    background-size: 400% 400%;
-    animation: gradientAnimation 15s ease infinite;
-    color: #000; /* Чёрный текст для светлой темы */
+    /*background: linear-gradient(135deg, #f0f4c3, #e0f7fa);*/
+    background-color: #F9F9F9;
+    /*background-size: 400% 400%;*/
+
 }
+
+/* Стили для светлой темы */
+body.light .progress-bar {
+
+    background-color: #92b0d2; /* Цвет фона прогресс-бара для тёмной темы */
+    color: #030303; /* Цвет текста прогресс-бара для тёмной темы */
+    font-size: 20px;
+}
+
+/*body.light button {*/
+/*    color: #333333;*/
+/*}*/
+
+body.light .navbar-nav {
+    background-color: #F9F9F9; /* Цвет фона навигационной панели для светлой темы */
+}
+
+body.light .nav-link{
+    border-radius: 50px;
+    transition: background-color 0.6s, color 0.6s;
+}
+
+body.light .nav-link:hover {
+    color: #a184e1;
+    transform: scale(1.1);
+    box-shadow: 0 4px 30px #a184e1
+}
+
 
 body.dark {
-    background: linear-gradient(135deg, #737d86, #2c3a42);
-    background-size: 400% 400%;
-    animation: gradientAnimation 15s ease infinite;
-    color: #f5f5f5; /* Молочно-белый цвет текста для тёмной темы */
+    background-color: #121212;
+    /*background-size: 400% 400%;*/
+    /*animation: gradientAnimation 15s ease infinite;*/
+    color: #E0E0E0; /* Молочно-белый цвет текста для тёмной темы */
 }
 
-@keyframes gradientAnimation {
-    0% {
-        background-position: 50%;
-    }
-    50% {
-        background-position: 100% 50%;
-    }
-    100% {
-        background-position: 50%;
-    }
+/* Стили для тёмной темы */
+body.dark .progress-bar {
+
+    background-color: #737d86; /* Цвет фона прогресс-бара для тёмной темы */
+    color: #E0E0E0; /* Цвет текста прогресс-бара для тёмной темы */
+    font-size: 20px;
 }
 
-
-/* Светлая тема для квадратов */
-body.light .square {
-    background-color: rgba(0, 123, 255, 0.1); /* Цвет текста при наведении */ /* Прозрачный или светлый фон для квадратов */
-    color: #000; /* Чёрный текст */
-    border: 2px solid #007bff; /* Синяя граница */
-    transition: background-color 0.5s, color 0.5s, border 0.5s;
+body.dark .navbar-nav {
+    color: #E0E0E0;
+    background-color: #121212; /* Цвет фона навигационной панели для светлой темы */
 }
 
-/* Тёмная тема для квадратов */
-body.dark .square {
-    background-color: #2c3e50; /* Прозрачный или тёмный фон для квадратов */
-    color: #fff; /* Белый текст */
-    border: 2px solid #f1c40f; /* Золотая граница */
-    transition: background-color 0.5s, color 0.5s, border 0.5s;
+body.dark .nav-link:hover {
+    color: #6ed4f6;
+    transform: scale(1.1);
+    box-shadow: 0 4px 30px #f8f8f8
 }
 
-.navbar-light {
-    background-color: #f8f9fa; /* Цвет фона навигационной панели для светлой темы */
-    transition: background-color 0.8s ease; /* Плавный переход для навигационной панели */
-}
-
-.navbar-dark {
-    background-color: #343a40; /* Цвет фона навигационной панели для темной темы */
-    transition: background-color 0.8s ease; /* Плавный переход для навигационной панели */
-}
-
-.navbar-nav {
-    border-radius: 20px; /* Устанавливаем радиус закругления */
-    transition: background-color 0.3s, color 0.3s; /* Добавляем плавный переход */
-    background-color: rgba(0, 123, 255, 0.1); /* Цвет фона при наведении */
-    color: #007bff; /* Цвет текста при наведении */
-}
-
-.nav-link {
-    border-radius: 20px; /* Устанавливаем радиус закругления */
-    transition: background-color 0.3s, color 0.3s; /* Добавляем плавный переход */
-}
-
-.nav-link:hover {
-    color: #007bff; /* Change to your desired hover color */
-    transform: scale(1.1); /* Slightly scale up the text */
-    box-shadow: 0 4px 20px rgba(0, 123, 255, 0.5)
-}
-
-.square {
-    width: 200px;  /* Ширина квадрата */
-    height: 200px; /* Высота квадрата */
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    border: 2px solid #007bff; /* Цвет границы */
-    background-color: #f8f9fa; /* Цвет фона */
-    margin: 2px; /* Отступ между квадратами */
-    transition: transform 0.3s, box-shadow 0.3s; /* Переход для эффектов */
+body.dark .nav-link{
+    color: #ffffff;
+    border-radius: 50px;
+    transition: background-color 0.6s, color 0.6s;
 
 }
 
-.square:hover {
-    transform: scale(1.1); /* Увеличение при наведении */
-    box-shadow: 0 4px 20px rgba(0, 123, 255, 0.5); /* Тень при наведении */
+
+
+
+
+.custom-soft-skill {
+    background-color: #28a745; /* Зеленый */
 }
+
+.custom-teamwork {
+    background-color: #17a2b8; /* Голубой */
+}
+
+.custom-problem-solving {
+    background-color: #ffc107; /* Желтый */
+}
+
+.custom-english {
+    background-color: #6c757d; /* Серый */
+}
+
+.custom-python {
+    background-color: #007bff; /* Синий */
+}
+
+.custom-django {
+    background-color: #dc3545; /* Красный */
+}
+
+.custom-postgresql {
+    background-color: #343a40; /* Темный */
+}
+
+
+/*.progress-bar {*/
+/*    font-size: inherit !important;*/
+/*    font-family: inherit !important;*/
+/*    color: inherit !important;*/
+/*}*/
+
+
+/*.navbar-nav {*/
+/*    border-radius: 20px;*/
+/*    transition: background-color 0.3s, color 0.3s;*/
+/*    background-color: rgba(0, 123, 255, 0.1);*/
+/*}*/
+
+
+/*text.light_theme {*/
+/*    font-family: 'Caveat', 'Dancing+Script', cursive;*/
+
+/*}*/
+
+/*@keyframes gradientAnimation {*/
+/*    0% {*/
+/*        background-position: 50%;*/
+/*    }*/
+/*    50% {*/
+/*        background-position: 100% 50%;*/
+/*    }*/
+/*    100% {*/
+/*        background-position: 50%;*/
+/*    }*/
+/*}*/
+
+
+
+/*body.light .square {*/
+/*    background-color: rgba(0, 123, 255, 0.1);*/
+/*    color: #000;*/
+/*    border: 2px solid #007bff;*/
+/*    transition: background-color 0.5s, color 0.5s, border 0.5s;*/
+/*}*/
+
+/*!* Тёмная тема для квадратов *!*/
+/*body.dark .square {*/
+/*    background-color: #2c3e50;*/
+/*    color: #fff;*/
+/*    border: 2px solid #f1c40f;*/
+/*    transition: background-color 0.5s, color 0.5s, border 0.5s;*/
+/*}*/
+
+/*.navbar-light {*/
+
+/*    transition: background-color 0.8s ease;*/
+/*}*/
+
+/*.navbar-dark {*/
+
+/*    transition: background-color 0.8s ease;*/
+/*}*/
+
+
+/*.nav-link {*/
+/*    border-radius: 50px;*/
+/*    transition: background-color 0.6s, color 0.6s;*/
+/*}*/
+
+/*.nav-link:hover {*/
+/*    color: #e30c65;*/
+/*    transform: scale(1.1);*/
+/*    box-shadow: 0 4px 30px rgb(0, 126, 250)*/
+/*}*/
+
+/*.square {*/
+/*    width: 200px;*/
+/*    height: 200px;*/
+/*    display: flex;*/
+/*    justify-content: center;*/
+/*    align-items: center;*/
+/*    border: 2px solid #007bff;*/
+/*    background-color: #f8f9fa;*/
+/*    margin: 2px;*/
+/*    transition: transform 0.3s, box-shadow 0.3s;*/
+
+/*}*/
+
+/*.square:hover {*/
+/*    transform: scale(1.1);*/
+/*    box-shadow: 0 4px 20px rgba(0, 123, 255, 0.5);*/
+/*}*/
 
 .centered {
     display: flex;
     justify-content: center;
     align-items: center;
-    height: 30vh; /* Высота 100% от высоты экрана */
+    height: 30vh;
 }
 
 .fade-in {

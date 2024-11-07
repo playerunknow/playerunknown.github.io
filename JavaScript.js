@@ -43,3 +43,13 @@ themeToggle.addEventListener('click', () => {
 if (!body.classList.contains('dark')) {
     body.classList.add('light');
 }
+
+
+
+// Функция для закрытия меню
+function closeMenu() {
+    const navbarCollapse = document.getElementById('navbarNav');
+    if (navbarCollapse.classList.contains('show')) {
+        navbarCollapse.classList.remove('show');
+    }
+}

@@ -1,7 +1,10 @@
 
+
+
 @media (max-width: 1200px) {
     .container{
         max-width: 970px;
+        font-size: 2em;
     }
 }
 
@@ -14,6 +17,13 @@
 @media (max-width: 767px) {
     .container{
         max-width: none;
+    }
+}
+
+@media (max-width: 991px) {
+    .navbar-collapse {
+        display: flex;
+        justify-content: space-between; /* Distribute space between menu items and the theme toggle */
     }
 }
 

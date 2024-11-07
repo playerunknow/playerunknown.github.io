@@ -5,11 +5,36 @@ body{
     font-size: 26px !important;
 }
 
+.navbar-nav li {
+    text-align: center;
+    margin-bottom: 0.5rem;
+}
+
+/* Позиционирование кнопки */
+#themeToggle {
+    position: absolute;
+    right: 1rem; /* можно настроить отступ */
+    top: 0;
+}
+
+
+/*button {*/
+/*    background-color: #92b0d2 !important;*/
+/*    color: black !important;*/
+/*}*/
+
 .container{
     max-width: 1200px;
     margin: 0px auto;
     padding: 0px 15px;
 }
+
+body.light button{
+    background-color: #92b0d2 !important;
+    color: black !important;
+}
+
+
 
 body.light {
     background-color: #F9F9F9;
@@ -49,6 +74,10 @@ body.dark {
     color: #E0E0E0;
 }
 
+body.dark button{
+    background-color: #ffffff !important;
+    color: #000000 !important;
+}
 
 
 body.dark .progress-bar {
@@ -76,10 +105,20 @@ body.dark .nav-link{
 }
 
 body.dark .bottom {
-    background-color: #737d86;
+    background-color: #ffffff !important;
+
 }
 
 
+body.light .custom-toggler {
+    border-color:  #92b0d2 !important;
+    background-color: #92b0d2 !important;
+}
+
+body.dark .custom-toggler {
+    border-color: rgba(255, 255, 255, 0.8) !important;
+    background-color: #fdfdfd !important;
+}
 
 
 .centered {
@@ -88,7 +127,6 @@ body.dark .bottom {
     align-items: center;
     height: 10vh;
     /*padding-top: 300px;*/
-    padding-bottom: 30px;
 }
 
 .fade-in {

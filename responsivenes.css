@@ -23,7 +23,9 @@
 @media (max-width: 991px) {
     .navbar-collapse {
         display: flex;
-        justify-content: space-between; /* Distribute space between menu items and the theme toggle */
+        justify-content: space-between;
+
     }
+
 }
 

@@ -6,6 +6,13 @@ body{
     font-size: 26px !important;
 }
 
+@media (max-width: 991px) {
+    .navbar-collapse {
+        display: flex;
+        justify-content: space-between; /* Distribute space between menu items and the theme toggle */
+    }
+}
+
 .container{
     max-width: 1200px;
     margin: 0px auto;
@@ -22,8 +29,8 @@ body.light {
 /* Стили для светлой темы */
 body.light .progress-bar {
 
-    background-color: #92b0d2; /* Цвет фона прогресс-бара для тёмной темы */
-    color: #030303; /* Цвет текста прогресс-бара для тёмной темы */
+    background-color: #92b0d2;
+    color: #030303;
     font-size: 20px;
 }
 
@@ -32,7 +39,7 @@ body.light .progress-bar {
 /*}*/
 
 body.light .navbar-nav {
-    background-color: #F9F9F9; /* Цвет фона навигационной панели для светлой темы */
+    background-color: #F9F9F9;
 }
 
 body.light .nav-link{
@@ -55,20 +62,20 @@ body.dark {
     background-color: #121212;
     /*background-size: 400% 400%;*/
     /*animation: gradientAnimation 15s ease infinite;*/
-    color: #E0E0E0; /* Молочно-белый цвет текста для тёмной темы */
+    color: #E0E0E0;
 }
 
 /* Стили для тёмной темы */
 body.dark .progress-bar {
 
-    background-color: #737d86; /* Цвет фона прогресс-бара для тёмной темы */
-    color: #E0E0E0; /* Цвет текста прогресс-бара для тёмной темы */
+    background-color: #737d86;
+    color: #E0E0E0;
     font-size: 20px;
 }
 
 body.dark .navbar-nav {
     color: #E0E0E0;
-    background-color: #121212; /* Цвет фона навигационной панели для светлой темы */
+    background-color: #121212;
 }
 
 body.dark .nav-link:hover {
@@ -87,8 +94,6 @@ body.dark .nav-link{
 body.dark .bottom {
     background-color: #737d86;
 }
-
-
 
 
 
@@ -185,6 +190,8 @@ body.dark .bottom {
     justify-content: center;
     align-items: center;
     height: 30vh;
+    /*padding-top: 300px;*/
+    /*padding-bottom: 300px;*/
 }
 
 .fade-in {

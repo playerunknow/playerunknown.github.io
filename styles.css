@@ -5,40 +5,22 @@ body{
     font-size: 26px !important;
 }
 
+#Contacts a {
+    text-decoration: none;
+}
+
+
+#themeToggle {
+    position: absolute;
+    right: 1rem;
+    top: 0;
+}
 
 .navbar-nav li {
     text-align: center;
     margin-bottom: 0.5rem;
 }
 
-/* Позиционирование кнопки */
-#themeToggle {
-    position: absolute;
-    right: 1rem; /* можно настроить отступ */
-    top: 0;
-}
-
-/*#themeToggle {*/
-
-/*}*/
-
-/*body.light .navbar-nav li {*/
-
-/*}*/
-/*body.dark .navbar-nav li {*/
-
-/*}*/
-
-/*button {*/
-/*    background-color: #92b0d2 !important;*/
-/*    color: black !important;*/
-/*}*/
-
-.container{
-    max-width: 1200px;
-    margin: 0px auto;
-    padding: 0px 15px;
-}
 
 body.light button{
     background-color: #92b0d2 !important;

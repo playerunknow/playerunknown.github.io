@@ -27,5 +27,22 @@
 
     }
 
+    /*body.light .navbar-nav li {*/
+    /*    text-align: center;*/
+    /*    margin-bottom: 0.5rem;*/
+    /*}*/
+
+    /*body.dark .navbar-nav li {*/
+    /*    text-align: center;*/
+    /*    margin-bottom: 0.5rem;*/
+    /*}*/
+    /*!* Позиционирование кнопки *!*/
+    /*#themeToggle {*/
+    /*    position: absolute;*/
+    /*    right: 1rem; !* можно настроить отступ *!*/
+    /*    top: 0;*/
+    /*}*/
+
+
 }
 

@@ -18,15 +18,16 @@
 <div class="container">
     <nav class="navbar navbar-nav navbar-expand-lg navbar-light fixed-top">
         <div class="container-fluid fade-in">
+            <!-- Add this button for mobile screen navbar toggling -->
             <button class="navbar-toggler custom-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
                     aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
                 <span class="navbar-toggler-icon"></span>
             </button>
-
-            <div class="collapse navbar-collapse" id="navbarNav">
-                <ul class="navbar-nav">
+            <!-- Collapse wrapper -->
+            <div class="collapse navbar-collapse justify-content-center" id="navbarNav">
+                <ul class="navbar-nav mx-auto">
                     <li class="nav-item">
-                        <a class="nav-link fade-in" href="#" onclick="closeMenu()">General</a>
+                        <a class="nav-link fade-in" aria-current="page" href="#" onclick="closeMenu()">General</a>
                     </li>
                     <li class="nav-item">
                         <a class="nav-link fade-in" href="#AboutMe" onclick="closeMenu()">About Me</a>
@@ -38,13 +39,12 @@
                         <a class="nav-link fade-in" href="#Contacts" onclick="closeMenu()">Contacts</a>
                     </li>
                 </ul>
-            </div>
 
+            </div>
             <button id="themeToggle" class="btn btn-outline-secondary ms-3">Toggle Theme</button>
         </div>
     </nav>
 </div>
-
 
 
 <div class="container mt-5">
